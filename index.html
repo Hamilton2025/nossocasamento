@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="home-page">
+
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="logo">
+    <a href="#convite"><div class="monogram">H ✧ J</div></a>
+  </div>
+  <ul>
+    <li><a href="#convite">Convite</a></li>
+    <li><a href="#detalhes">Detalhes do Evento</a></li>
+    <li><a href="#alojamento">Alojamento</a></li>
+    <li><a href="#rsvp">Confirmar Presença</a></li>
+  </ul>
+</nav>
+  
+<!-- ✅ SECTION: CONVITE / HERO -->
+<section id="convite" class="hero">
+    <div class="hero-slideshow">
+    <img src="img/convite1.jpg" alt="Convite" class="slide active">
+    <img src="img/convite.jpg" alt="Convite" class="slide">
+    <img src="img/convite2.jpg" alt="Convite 2" class="slide">
+    <img src="img/convite3.jpg" alt="Convite 3" class="slide">
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <header>
+    <h3 class="versiculo">“O amor é paciente, o amor é bondoso...Tudo sofre, tudo crê, tudo espera, tudo suporta.” – 1 Coríntios 13:4-7</h3>
+    <h1 id="titulo">Hamilton <span class="amp">&</span> Jérica</h1>
+    <div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+    <div class="pais">
+      <span class="left">Fernando Domingos</span>
+      <span class="bar">|</span>
+      <span class="right">João Carlos da Fonseca Nunes</span>
+      <span class="left">Amélia Inácio Fernando</span>
+      <span class="bar">|</span>
+      <span class="right">Maria Cristina N. Teigas Nunes</span>
+    </div>
+    <p class="subtitle">Convidamos para celebrar o casamento dos nossos filhos</p>
+    <h5 id="titulo">Hamilton <span class="amp">&</span> Jérica</h5>
+    <p class="subtitle">25 de junho de 2026 – Royal Óbidos Spa & Golf Resort</p>
+    <div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+  </header>
+</section>
+
+<!-- ✅ SECTION: DETALHES -->
+<section id="detalhes" class="details-section">
+  <header>
+    <h2 class="section-title">Detalhes do Evento</h2>
+    <div class="divider"></div>
+  </header>
+
+  <div class="icons-grid">
+    <div class="icon-card">
+      <svg class="ico" viewBox="0 0 64 64"><path d="M32 60s18-20 18-32A18 18 0 0 0 14 28c0 12 18 32 18 32z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32 22c-2.2-4.2-8-3.7-9.4.8C21.9 26.9 26.6 30 32 34c5.4-4 10.1-7.1 9.4-11.2C40 18.3 34.2 17.8 32 22z" fill="currentColor"/></svg>
+      <p class="icon-text">Royal Óbidos Spa & Golf Resort <br> 2510-665 Óbidos, Portugal</p>
+    </div>
+
+    <div class="icon-card">
+      <svg class="ico" viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="42" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 22h48" stroke="currentColor" stroke-width="2"/><line x1="20" y1="10" x2="20" y2="20" stroke="currentColor" stroke-width="2"/><line x1="44" y1="10" x2="44" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+      <p class="icon-text">25 de junho de 2026</p>
+    </div>
+
+    <div class="icon-card">
+      <svg class="ico" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="2"/><line x1="32" y1="32" x2="32" y2="18" stroke="currentColor" stroke-width="2"/><line x1="32" y1="32" x2="42" y2="38" stroke="currentColor" stroke-width="2"/></svg>
+      <p class="icon-text">16:30</p>
+    </div>
+  </div>
+</section>
+<div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+
+<!-- ✅ SECTION: AGENDA -->
+<section id="agenda" class="agenda">
+  <h2 class="section-title">Sequência do Evento</h2>
+  <ol class="timeline">
+    <li class="tl-item"><div class="tl-icon">⛪</div><div class="tl-content"><h3>Cerimónia</h3><p>16:30 – 17:30</p></div></li>
+    <li class="tl-item"><div class="tl-icon">🥂</div><div class="tl-content"><h3>Cocktail e Registos Fotográficos</h3><p>17:30 – 18:30</p></div></li>
+    <li class="tl-item"><div class="tl-icon">🎂</div><div class="tl-content"><h3>Corte do bolo</h3><p>18:30 – 19:30</p></div></li>
+    <li class="tl-item"><div class="tl-icon">🍽️</div><div class="tl-content"><h3>Jantar</h3><p>19:30 – 21:30</p></div></li>
+  </ol>
+  <p>O jantar marca o fim da celebração, mas as memórias deste dia ficarão para sempre nos nossos corações.</p>
+</section>
+<div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+
+<!-- ✅ SECTION: PRESENTES -->
+<section id="presentes" class="gifts">
+  <h2 class="section-title">Presentes</h2>
+  <p>A vossa presença já é o maior presente! Mas, se quiserem contribuir...</p>
+
+  <div class="gift-grid">
+    <article class="gift-card"><span class="price-badge">80 €</span><span class="gift-emoji">🍗</span><h3>Peito de frango da Semana</h3><p class="gift-note">Bulk limpo & feliz</p></article>
+    <article class="gift-card"><span class="price-badge">150 €</span><span class="gift-emoji">👩🏼‍❤️‍👨🏾</span><h3>Lua de mel</h3><p class="gift-note">Contribuição especial</p></article>
+    <article class="gift-card"><span class="price-badge">180 €</span><span class="gift-emoji">🏕️</span><h3>Escapadinha</h3><p class="gift-note">Fim de semana sem treinar… só a treinar o amor</p></article>
+    <article class="gift-card"><span class="price-badge">200 €</span><span class="gift-emoji">🍽️</span><h3>Jantar gourmet</h3><p class="gift-note">Porque os noivos são bons de garfo</p></article>
+    <article class="gift-card"><span class="price-badge">250 €</span><span class="gift-emoji">✈️</span><h3>Voos</h3><p class="gift-note">Ida e volta garantida para o início da nossa aventura</p></article>
+  </div>
+  <div class="iban-container">
+    <div class="iban-box">
+      <h4>Wise</h4>
+      <p>Jérica Nunes: BE22967584394347</p>
+    </div>
+    <div class="iban-box">
+      <h4>BAI</h4>
+      <p>Hamilton Domingos: AO06 004000003928939810158</p>
+    </div>
+  </div>
+</section>
+
+<div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+
+<!-- ✅ SECTION: ALOJAMENTO -->
+<section id="alojamento" class="hotel-info">
+  <h2 class="section-title">Alojamento</h2>
+  <img src="img/hotel.png" class="hotel-image" alt="Hotel Royal Óbidos">
+  <h3>Royal Óbidos Spa & Golf Resort</h3>
+  <p>Cabeço da Serra - Vau, 2510-665 Óbidos, Portugal</p>
+  <p>Reserve sua estadia com o código <strong>CASAMENTOHJ2026</strong> e garanta a melhor tarifa para nosso casamento.<p>
+</section>
+
+<div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
+
+<!-- ✅ SECTION: RSVP -->
+<section id="rsvp" class="rsvp-section">
+  <div class="wrap">
+    <main class="card">
+      <header>
+        <h2 class="section-title">Confirmar Presença (RSVP)</h2>
+        <p class="subtitle">Por favor, confirme a sua presença até dia <strong>25/03/2026</strong></p>
+        <div class="divider"></div>
+      </header>
+
+      <form class="rsvp-form" id="rsvpForm">
+        <!-- Sim ou Não -->
+        <fieldset>
+          <legend>Vai estar presente?</legend>
+          <label>
+            <input type="radio" name="attendance" value="Sim" required> Sim, estarei presente
+          </label>
+          <label>
+            <input type="radio" name="attendance" value="Não" required> Não poderei estar presente
+          </label>
+        </fieldset>
+
+        <!-- Nome -->
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" name="name" placeholder="Ex: Maria Silva" required>
+
+        <!-- Convidados -->
+        <div id="guestsWrapper">
+          <label for="guests">Número de Convidados</label>
+          <input type="number" id="guests" name="guests" min="0" placeholder="Ex: 2">
+        </div>
+
+        <!-- Botão -->
+        <button class="btn" type="submit">Enviar Confirmação</button>
+      </form>
+
+      <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+        Obrigado! Sua confirmação foi enviada.
+      </p>
+    </main>
+  </div>
+</section>
+
+<footer>
+  <p>Contato:</p>
+  <a class="btn contact" href="https://wa.me/447904759769">📱 Noivo</a>
+  <a class="btn contact" href="https://wa.me/447721641471">📱 Noiva</a>
+  <p class="note">Aguardamos a sua presença.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
