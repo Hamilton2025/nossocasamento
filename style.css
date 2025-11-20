@@ -189,7 +189,7 @@ h1#titulo {
 h5#titulo {
   font-family: Cursive;
   font-weight:100;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.1;
   margin: 6px 0 18px;
   color: #1e2329;
@@ -448,24 +448,18 @@ h5#titulo {
   margin:0 
 }
 
-.iban-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-margin-top:20px;
-}
-
-.iban-box{
-background:rgba(182,140,87,.10);
-border:1px dashed var(--gold);
-border-radius:10px;
-padding:14px 18px;
-font-weight:600;
-letter-spacing:.5px;
-text-align:center;
-min-width:280px;
-box-shadow:0 4px 10px rgba(0,0,0,.05);
+.iban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(182,140,87,.10);
+  border: 1px dashed var(--gold);
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 6px auto;
+  width: fit-content;
 }
 
 .gifts-note{ 

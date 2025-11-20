@@ -67,52 +67,6 @@ function updateCountdown() {
 const timer = setInterval(updateCountdown, 1000);
 updateCountdown();
 
-  // --------- Add to Calendar (.ics) ---------
-  const addBtn = document.getElementById("addToCalendar");
-  if (addBtn) {
-    addBtn.addEventListener("click", () => {
-      const start = new Date(weddingLocalISO);
-      // Duração de 5 horas
-      const end = new Date(start.getTime() + 5 * 60 * 60 * 1000);
-
-      const toICSDate = (d) =>
-        // Ex.: 20260815T150000Z
-        d.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
-
-      const ics = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        "PRODID:-//Convite Hamilton & Jerica//PT",
-        "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH",
-        "BEGIN:VEVENT",
-        `UID:${cryptoRandom()}@convite-hj`,
-        `DTSTAMP:${toICSDate(new Date())}`,
-        `DTSTART:${toICSDate(start)}`,
-        `DTEND:${toICSDate(end)}`,
-        `SUMMARY:${escapeICS(eventTitle)}`,
-        `DESCRIPTION:${escapeICS(eventDescription)}`,
-        `LOCATION:${escapeICS(eventLocation)}`,
-        "END:VEVENT",
-        "END:VCALENDAR",
-      ].join("\r\n");
-
-      const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "Casamento_Hamilton_Jerica.ics";
-      document.body.appendChild(a);
-      a.click();
-
-      // Em alguns Safari/iOS, revogar imediatamente pode cancelar o download.
-      setTimeout(() => {
-        URL.revokeObjectURL(url);
-        a.remove();
-      }, 1000);
-    });
-  }
-
   // --------- Corações decorativos (sutis) ---------
   const hearts = document.querySelector(".hearts");
   if (hearts) {
@@ -160,6 +114,15 @@ updateCountdown();
       }
     });
   }     
+
+  const guestsInput = document.getElementById('guests');
+
+  guestsInput.addEventListener('input', function() {
+    const val = parseInt(this.value, 10);
+    if (isNaN(val) || (val !== 1 && val !== 2)) {
+      this.value = '';  // or you could set this.value = 1 to default
+    }
+  });
 
 /* --------- Helpers --------- */
 function escapeICS(text) {

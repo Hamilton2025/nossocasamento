@@ -46,7 +46,7 @@
 
   <header>
     <h3 class="versiculo">“O amor é paciente, o amor é bondoso...Tudo sofre, tudo crê, tudo espera, tudo suporta.” – 1 Coríntios 13:4-7</h3>
-    <h1 id="titulo">Hamilton <span class="amp">&</span> Jérica</h1>
+    <h1 id="titulo">H <span class="amp">&</span> J</h1>
     <div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
     <div class="pais">
       <span class="left">Fernando Domingos</span>
@@ -89,6 +89,28 @@
 </section>
 <div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
 
+  <!-- Countdown -->
+      <div class="countdown-grid">
+        <div class="cd-item">
+          <div class="cd-value" id="cd-days">0</div>
+          <div class="cd-label">Dias</div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-value" id="cd-hours">0</div>
+          <div class="cd-label">Horas</div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-value" id="cd-minutes">0</div>
+          <div class="cd-label">Minutos</div>
+        </div>
+        <div class="cd-item">
+          <div class="cd-value" id="cd-seconds">0</div>
+          <div class="cd-label">Segundos</div>
+        </div>
+      </div>
+      
+  <div class="fancy-sep" aria-hidden="true"> ✦ ─── ❖ ─── ✦ </div>
+
 <!-- ✅ SECTION: AGENDA -->
 <section id="agenda" class="agenda">
   <h2 class="section-title">Sequência do Evento</h2>
@@ -114,16 +136,9 @@
     <article class="gift-card"><span class="price-badge">200 €</span><span class="gift-emoji">🍽️</span><h3>Jantar gourmet</h3><p class="gift-note">Porque os noivos são bons de garfo</p></article>
     <article class="gift-card"><span class="price-badge">250 €</span><span class="gift-emoji">✈️</span><h3>Voos</h3><p class="gift-note">Ida e volta garantida para o início da nossa aventura</p></article>
   </div>
-  <div class="iban-container">
-    <div class="iban-box">
-      <h4>Wise</h4>
-      <p>Jérica Nunes: BE22967584394347</p>
-    </div>
-    <div class="iban-box">
-      <h4>BAI</h4>
-      <p>Hamilton Domingos: AO06 004000003928939810158</p>
-    </div>
-  </div>
+    <p>Se desejar nos presentear, poderá fazer transferência bancária para o IBAN abaixo:</p>
+    <p class="iban"><strong>IBAN PT (Noiva):</strong> PT50 002300004551323410494</p>
+    <p class="iban"><strong>IBAN AO (Noivo):</strong> AO06 004000003928939810158</p>
 </section>
 
 <div class="fancy-sep">✦ ─── ❖ ─── ✦</div>
@@ -152,7 +167,7 @@
       <form class="rsvp-form" id="rsvpForm">
         <!-- Sim ou Não -->
         <fieldset>
-          <legend>Vai estar presente?</legend>
+          <legend>Podemos contar com a sua presença?</legend>
           <label>
             <input type="radio" name="attendance" value="Sim" required> Sim, estarei presente
           </label>
@@ -168,7 +183,7 @@
         <!-- Convidados -->
         <div id="guestsWrapper">
           <label for="guests">Número de Convidados</label>
-          <input type="number" id="guests" name="guests" min="0" placeholder="Ex: 2">
+          <input type="number" id="guests" name="guests" min="0" max="2" placeholder="Ex: 2">
         </div>
 
         <!-- Botão -->
