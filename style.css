@@ -180,7 +180,7 @@ header {
 h1#titulo {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  font-size: clamp(32px, 6vw, 56px);
+  font-size: 44px;
   line-height: 1.1;
   margin: 18px 0 6px;
   color: #1e2329;
