@@ -22,15 +22,11 @@
     slides[index].classList.add('active');
   }, 5000); // changes image every 5 seconds
 
+ // --------- Contagem regressiva ---------
 document.addEventListener("DOMContentLoaded", () => {
-  // ---- Configuração do evento ----
-  // Lisboa em junho usa DST (WEST = UTC+1).
-  const weddingLocalISO = "2026-08-15T16:00:00+01:00";
-  const eventTitle = "Casamento de Hamilton & Jerica";
-  const eventLocation = "Lisboa, Portugal";
-  const eventDescription = "Junte-se a nós para celebrar este momento especial!";
 
-  // --------- Contagem regressiva ---------
+  const weddingLocalISO = "2026-06-25T16:30:00+01:00";
+ 
 const daysEl = document.getElementById("cd-days");
 const hoursEl = document.getElementById("cd-hours");
 const minsEl = document.getElementById("cd-minutes");
