@@ -20,7 +20,7 @@
     slides[index].classList.remove('active');
     index = (index + 1) % slides.length;
     slides[index].classList.add('active');
-  }, 3000); // changes image every 5 seconds
+  }, 2000); // changes image every 2 seconds
 
  // --------- Contagem regressiva ---------
 document.addEventListener("DOMContentLoaded", () => {
