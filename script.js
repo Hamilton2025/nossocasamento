@@ -25,7 +25,7 @@
  // --------- Contagem regressiva ---------
 document.addEventListener("DOMContentLoaded", () => {
 
-  const weddingLocalISO = "2026-06-25T16:30:00+01:00";
+  const weddingLocalISO = "2026-06-25T16:00:00+01:00";
  
 const daysEl = document.getElementById("cd-days");
 const hoursEl = document.getElementById("cd-hours");
